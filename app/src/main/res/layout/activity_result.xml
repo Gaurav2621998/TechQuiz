@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        tools:targetApi="lollipop_mr1"
+        android:background="@color/colorbackground"
+        >
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:paddingBottom="20dp"
+    app:cardCornerRadius="16dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:text="5"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:id="@+id/marksgot"
+        android:background="@drawable/item_circle"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Out Of"
+        android:textAlignment="center"
+        android:layout_marginTop="4dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textStyle="bold"
+        android:id="@+id/totalmarks"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+
+        />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result Analysis :"
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answerrecycler"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Answers >>>"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/viewanswer"
+            />
+    </LinearLayout>
+</ScrollView>

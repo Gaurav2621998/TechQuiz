@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+    >
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:background="#f5af19"
+        tools:targetApi="lollipop_mr1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Title"
+            android:id="@+id/quizTitle"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:id="@+id/timer"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="24dp"
+            />
+
+        </RelativeLayout>
+    </Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/quizrecycler"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:background="#a34996ec"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
